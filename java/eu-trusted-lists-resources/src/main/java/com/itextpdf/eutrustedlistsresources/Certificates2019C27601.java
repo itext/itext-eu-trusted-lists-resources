@@ -5,7 +5,7 @@ package com.itextpdf.eutrustedlistsresources;
  */
 class Certificates2019C27601 {
 
-    static final String certificate2 = "-----BEGIN CERTIFICATE-----\n" +
+    static final String CERTIFICATE_2 = "-----BEGIN CERTIFICATE-----\n" +
             "\n" +
             "MIIHATCCBOmgAwIBAgIDGpmWMA0GCSqGSIb3DQEBCwUAME4xCzAJBgNVBAYTAkxVMRYwFAYDVQQKDA1MdXhUcnVzdCBTLkEuMScwJQYDV"
             + "QQDDB5MdXhUcnVzdCBHbG9iYWwgUXVhbGlmaWVkIENBIDMwHhcNMTYwOTE1MDkwMDEyWhcNMTkwOTE1MDkwMDEyWjCB/TELMAkGA1UE"
@@ -34,7 +34,7 @@ class Certificates2019C27601 {
             "\n" +
             "-----END CERTIFICATE-----\n" +
             "\n";
-    static final String certificate3 = "-----BEGIN CERTIFICATE-----\n" +
+    static final String CERTIFICATE_3 = "-----BEGIN CERTIFICATE-----\n" +
             "\n" +
             "MIIHDjCCBPagAwIBAgIDHiEoMA0GCSqGSIb3DQEBCwUAME4xCzAJBgNVBAYTAkxVMRYwFAYDVQQKDA1MdXhUcnVzdCBTLkEuMScwJQYDV"
             + "QQDDB5MdXhUcnVzdCBHbG9iYWwgUXVhbGlmaWVkIENBIDMwHhcNMTcwNTExMTAyNzI1WhcNMjAwNTExMTAyNzI1WjCCAQkxCzAJBgNV"
@@ -62,7 +62,7 @@ class Certificates2019C27601 {
             + "3+MYIeQJgAK3ofJcuKCKYQ5uUEZaU2CKiR6TzvzzGqQ==\n" +
             "\n" +
             "-----END CERTIFICATE-----\n";
-    static final String certificate4 = "-----BEGIN CERTIFICATE-----\n" +
+    static final String CERTIFICATE_4 = "-----BEGIN CERTIFICATE-----\n" +
             "\n" +
             "MIIGlTCCBH2gAwIBAgIDMg6dMA0GCSqGSIb3DQEBCwUAME4xCzAJBgNVBAYTAkxVMRYwFAYDVQQKDA1MdXhUcnVzdCBTLkEuMScwJQYDV"
             + "QQDDB5MdXhUcnVzdCBHbG9iYWwgUXVhbGlmaWVkIENBIDMwHhcNMTgwMjIwMTI1MjIxWhcNMjEwMjIwMTI1MjIxWjCCAQ0xKzApBgkq"
@@ -89,7 +89,7 @@ class Certificates2019C27601 {
             "\n" +
             "-----END CERTIFICATE-----\n" +
             "\n";
-    static final String certificate5 = "-----BEGIN CERTIFICATE-----\n" +
+    static final String CERTIFICATE_5 = "-----BEGIN CERTIFICATE-----\n" +
             "\n" +
             "MIIGiDCCBXCgAwIBAgIQaED4tIulqHJbg9RoxVfK" +
             "+jANBgkqhkiG9w0BAQsFADBcMQswCQYDVQQGEwJFUzEoMCYGA1UECgwfRElSRUNDSU9OIEdFTkVSQUwgREUgTEEgUE9MSUNJQTENMAsGA"
@@ -116,7 +116,7 @@ class Certificates2019C27601 {
             + "vM/loWepvk9xq0buu4XKiBAMhYXezg=\n" +
             "\n" +
             "-----END CERTIFICATE-----\n";
-    static final String certificate6 = "-----BEGIN CERTIFICATE-----\n" +
+    static final String CERTIFICATE_6 = "-----BEGIN CERTIFICATE-----\n" +
             "\n" +
             "MIIG7zCCBNegAwIBAgIQEAAAAAAAnuXHXttK9Tyf2zANBgkqhkiG9w0BAQsFADBkMQswCQYDVQQGEwJCRTERMA8GA1UEBxMIQnJ1c3Nlb"
             + "HMxHDAaBgNVBAoTE0NlcnRpcG9zdCBOLlYuL1MuQS4xEzARBgNVBAMTCkNpdGl6ZW4gQ0ExDzANBgNVBAUTBjIwMTgwMzAeFw0xODA2"
@@ -144,7 +144,7 @@ class Certificates2019C27601 {
             + "v\n" +
             "\n" +
             "-----END CERTIFICATE-----\n";
-    static final String certificate7 = "-----BEGIN CERTIFICATE-----\n" +
+    static final String CERTIFICATE_7 = "-----BEGIN CERTIFICATE-----\n" +
             "\n" +
             "MIIG3jCCBMagAwIBAgIUGuqe9pHg6UIaItA5" +
             "/9FCYe0jS3IwDQYJKoZIhvcNAQELBQAwczELMAkGA1UEBhMCQkUxGTAXBgNVBGEMEE5UUkJFLTA1Mzc2OTgzMTgxIDAeBgNVBAoMF1F1b"
@@ -172,7 +172,7 @@ class Certificates2019C27601 {
             + "9RZaDHoPA9ybzRLl2WL9xHQVfdiKzUJl1hTDp4qApm6VRQ==\n" +
             "\n" +
             "-----END CERTIFICATE-----\n";
-    static final String certificate8 = "-----BEGIN CERTIFICATE-----\n" +
+    static final String CERTIFICATE_8 = "-----BEGIN CERTIFICATE-----\n" +
             "\n" +
             "MIIG3TCCBMWgAwIBAgIUWXcucAZpt2afsBLFzdE8OigaCREwDQYJKoZIhvcNAQELBQAwczELMAkGA1UEBhMCQkUxGTAXBgNVBGEMEE5UU"
             + "kJFLTA1Mzc2OTgzMTgxIDAeBgNVBAoMF1F1b1ZhZGlzIFRydXN0bGluayBCVkJBMScwJQYDVQQDDB5RdW9WYWRpcyBCZWxnaXVtIElz"
@@ -199,7 +199,7 @@ class Certificates2019C27601 {
             + "0VYfwMafmGuBUG/B0EV2Rsc7/F2vUQkuakNoPjm6Ept3YIu7WY22lGwnAMN/Gq0xyQvrHrqA1n+XuKB/hq\n" +
             "\n" +
             "-----END CERTIFICATE-----\n";
-    static final String certificate1 = "-----BEGIN CERTIFICATE-----\n" +
+    static final String CERTIFICATE_1 = "-----BEGIN CERTIFICATE-----\n" +
             "\n" +
             "MIIGZzCCBE" +
             "+gAwIBAgIQEAAAAAAAH6yPXvnVxqcEcDANBgkqhkiG9w0BAQUFADAzMQswCQYDVQQGEwJCRTETMBEGA1UEAxMKQ2l0aXplbiBDQTEPMA0"
@@ -228,13 +228,13 @@ class Certificates2019C27601 {
             "-----END CERTIFICATE-----\n";
 
 
-    static final String certificate1SHA256 = "VACrcSxBqvDEC1BeJk1UlNivQYD49ilV0WIjsykPl8M=";
-    static final String certificate2SHA256 = "nBo7ZG6vEyOY7zGeQcjn7XJbZNV3JYCuEl1ZwPaEVjA=";
-    static final String certificate3SHA256 = "WaG/KQuBixd61hrEs+bc3dRtptW+lXn4VkrepvLPBz4=";
-    static final String certificate4SHA256 = "jlCPA7EyUAw0A9tm6d05zXj0ZXyECVinfTTnvWIUaOc=";
-    static final String certificate5SHA256 = "waN9tIzV4Eebl/TeMuOnRwxSqvuUwWVu9W+XUDmSyKc=";
-    static final String certificate6SHA256 = "0gZP3XD2mC3MUWuG2dXFauqTlBfGJLLkeMCyneVPhHQ=";
-    static final String certificate7SHA256 = "Q1UEv9gC7fTbCMvXx3KaDUWyJ3l7cn5ObqHTFoQWY0I=";
-    static final String certificate8SHA256 = "zNh5s2u1U2hb7L0SkBx/Qfe9Pgf4mPy74e7EVrA9dYk=";
+    static final String CERTIFICATE_1_SHA256 = "VACrcSxBqvDEC1BeJk1UlNivQYD49ilV0WIjsykPl8M=";
+    static final String CERTIFICATE_2_SHA256 = "nBo7ZG6vEyOY7zGeQcjn7XJbZNV3JYCuEl1ZwPaEVjA=";
+    static final String CERTIFICATE_3_SHA256 = "WaG/KQuBixd61hrEs+bc3dRtptW+lXn4VkrepvLPBz4=";
+    static final String CERTIFICATE_4_SHA256 = "jlCPA7EyUAw0A9tm6d05zXj0ZXyECVinfTTnvWIUaOc=";
+    static final String CERTIFICATE_5_SHA256 = "waN9tIzV4Eebl/TeMuOnRwxSqvuUwWVu9W+XUDmSyKc=";
+    static final String CERTIFICATE_6_SHA256 = "0gZP3XD2mC3MUWuG2dXFauqTlBfGJLLkeMCyneVPhHQ=";
+    static final String CERTIFICATE_7_SHA256 = "Q1UEv9gC7fTbCMvXx3KaDUWyJ3l7cn5ObqHTFoQWY0I=";
+    static final String CERTIFICATE_8_SHA256 = "zNh5s2u1U2hb7L0SkBx/Qfe9Pgf4mPy74e7EVrA9dYk=";
 
 }

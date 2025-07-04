@@ -25,7 +25,13 @@ public class SharpenConfigMapping implements MappingConfiguration {
 
     @Override
     public void applyMappingConfiguration(MappingConfigurator configurator) {
+        configurator.mapNamespace("com.itextpdf", "iText");
         configurator.mapMethod("java.util.Arrays.asList", "Util.ArraysAsList", false);
+    }
+
+    @Override
+    public void setConfigModuleSettings(ModulesConfigurator modulesConfigurator) {
+
     }
 
     @Override

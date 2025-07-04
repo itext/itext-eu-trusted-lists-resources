@@ -2,15 +2,35 @@
   <PropertyGroup Label="Configuration">
     <RootNamespace />
   </PropertyGroup>
+
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OutputType>library</OutputType>
-  </PropertyGroup>
-  <PropertyGroup>
+    <OutputType>Library</OutputType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AssemblyName>itext.eu-trusted-lists-resources</AssemblyName>
-    <RootNamespace />
+    <PackageId>itext.eu-trusted-lists-resources</PackageId>
+    <Version>1.0.0</Version>
+    <Title>iText eu trusted lists resources</Title>
+    <Authors>Apryse Software</Authors>
+    <Company>Apryse Software</Company>
+    <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
+    <PackageIcon>ITSC-avatar.png</PackageIcon>
+    <RequireLicenseAcceptance>true</RequireLicenseAcceptance>
+    <Description>
+      Contains the certificates needed for EU list of trusted lists (LoTL) validation in the iText Sign module.
+      Disclaimer:
+      The authenticity and integrity of the used certificates should be verified by relying parties prior to any use.
+      Apryse accepts no responsibility or liability whatsoever with regard to the content of this repository.
+    </Description>
+    <Copyright>Copyright (c) 1998-2025 Apryse Group NV</Copyright>
+    <PackageLanguage>en-US</PackageLanguage>
+    <PackageTags>itext c# .net csharp pdf EU listOfTrustedLists opensource open source</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="ITSC-avatar.png" Pack="true" PackagePath="ITSC-avatar.png"  />
+    <None Include="..\..\..\..\NOTICE.md" Pack="true" PackagePath="NOTICE.md" />
+    <None Include="..\..\..\..\LICENCE.md" Pack="true" PackagePath="LICENCE.md" />
+  </ItemGroup>
+
 </Project>

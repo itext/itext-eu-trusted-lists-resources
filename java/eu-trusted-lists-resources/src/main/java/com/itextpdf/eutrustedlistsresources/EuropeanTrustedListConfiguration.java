@@ -1,7 +1,5 @@
 package com.itextpdf.eutrustedlistsresources;
 
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,30 +9,35 @@ import java.util.List;
  */
 public class EuropeanTrustedListConfiguration {
 
-    private static final String euTrustedListUrl = "https://ec.europa.eu/tools/lotl/eu-lotl.xml";
-
-    private final URI euTrustedListUri;
+    private static final String EU_TRUSTED_LISTS_URL = "https://ec.europa.eu/tools/lotl/eu-lotl.xml";
+    private static final String CURRENTLY_SUPPORTED_PUBLICATION = "https://eur-lex.europa" +
+            ".eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.276.01.0001.01.ENG";
 
     /**
-     * Initializes a new instance of the {@code EuTrustedListConfig} class.
+     * Default constructor for the EuropeanTrustedListConfiguration.
      */
     public EuropeanTrustedListConfiguration() {
-        try {
-            euTrustedListUri = new URI(euTrustedListUrl);
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e.getMessage());
-        }
+        // Default constructor
+    }
+
+
+    /**
+     * Returns the url of the European Union Trusted List.
+     *
+     * @return the url of the trusted list
+     */
+    public String getTrustedListUri() {
+        return EU_TRUSTED_LISTS_URL;
     }
 
     /**
-     * Returns the URI of the European Union Trusted List.
+     * Returns the currently supported publication of the European Union Trusted List.
      *
-     * @return the URI of the trusted list
+     * @return the currently supported publication URL.
      */
-    public URI getTrustedListUri() {
-        return euTrustedListUri;
+    public String getCurrentlySupportedPublication() {
+        return CURRENTLY_SUPPORTED_PUBLICATION;
     }
-
 
     /**
      * Returns a list of certificates.
@@ -43,22 +46,22 @@ public class EuropeanTrustedListConfiguration {
      */
     public List<PemCertificateWithHash> getCertificates() {
         return Arrays.asList(
-                new PemCertificateWithHash(Certificates2019C27601.certificate1,
-                        Certificates2019C27601.certificate1SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.certificate2,
-                        Certificates2019C27601.certificate2SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.certificate3,
-                        Certificates2019C27601.certificate3SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.certificate4,
-                        Certificates2019C27601.certificate4SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.certificate5,
-                        Certificates2019C27601.certificate5SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.certificate6,
-                        Certificates2019C27601.certificate6SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.certificate7,
-                        Certificates2019C27601.certificate7SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.certificate8,
-                        Certificates2019C27601.certificate8SHA256)
+                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_1,
+                        Certificates2019C27601.CERTIFICATE_1_SHA256),
+                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_2,
+                        Certificates2019C27601.CERTIFICATE_2_SHA256),
+                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_3,
+                        Certificates2019C27601.CERTIFICATE_3_SHA256),
+                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_4,
+                        Certificates2019C27601.CERTIFICATE_4_SHA256),
+                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_5,
+                        Certificates2019C27601.CERTIFICATE_5_SHA256),
+                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_6,
+                        Certificates2019C27601.CERTIFICATE_6_SHA256),
+                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_7,
+                        Certificates2019C27601.CERTIFICATE_7_SHA256),
+                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_8,
+                        Certificates2019C27601.CERTIFICATE_8_SHA256)
         );
     }
 

@@ -8,42 +8,39 @@ namespace iText.Eutrustedlistsresources {
     /// It provides the URI to the trusted list and a list of certificates.
     /// </remarks>
     public class EuropeanTrustedListConfiguration {
-        private const String euTrustedListUrl = "https://ec.europa.eu/tools/lotl/eu-lotl.xml";
+        private const String EU_TRUSTED_LISTS_URL = "https://ec.europa.eu/tools/lotl/eu-lotl.xml";
 
-        private readonly Uri euTrustedListUri;
+        private const String CURRENTLY_SUPPORTED_PUBLICATION = "https://eur-lex.europa" + ".eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.276.01.0001.01.ENG";
 
-        /// <summary>
-        /// Initializes a new instance of the
-        /// <c>EuTrustedListConfig</c>
-        /// class.
-        /// </summary>
+        /// <summary>Default constructor for the EuropeanTrustedListConfiguration.</summary>
         public EuropeanTrustedListConfiguration() {
-            try {
-                euTrustedListUri = new Uri(euTrustedListUrl);
-            }
-            catch (UriFormatException e) {
-                throw new Exception(e.Message);
-            }
         }
 
-        /// <summary>Returns the URI of the European Union Trusted List.</summary>
-        /// <returns>the URI of the trusted list</returns>
-        public virtual Uri GetTrustedListUri() {
-            return euTrustedListUri;
+        // Default constructor
+        /// <summary>Returns the url of the European Union Trusted List.</summary>
+        /// <returns>the url of the trusted list</returns>
+        public virtual String GetTrustedListUri() {
+            return EU_TRUSTED_LISTS_URL;
+        }
+
+        /// <summary>Returns the currently supported publication of the European Union Trusted List.</summary>
+        /// <returns>the currently supported publication URL.</returns>
+        public virtual String GetCurrentlySupportedPublication() {
+            return CURRENTLY_SUPPORTED_PUBLICATION;
         }
 
         /// <summary>Returns a list of certificates.</summary>
         /// <returns>a list of certificate strings</returns>
         public virtual IList<EuropeanTrustedListConfiguration.PemCertificateWithHash> GetCertificates() {
             return Util.ArraysAsList(new EuropeanTrustedListConfiguration.PemCertificateWithHash(Certificates2019C27601
-                .certificate1, Certificates2019C27601.certificate1SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
-                (Certificates2019C27601.certificate2, Certificates2019C27601.certificate2SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
-                (Certificates2019C27601.certificate3, Certificates2019C27601.certificate3SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
-                (Certificates2019C27601.certificate4, Certificates2019C27601.certificate4SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
-                (Certificates2019C27601.certificate5, Certificates2019C27601.certificate5SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
-                (Certificates2019C27601.certificate6, Certificates2019C27601.certificate6SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
-                (Certificates2019C27601.certificate7, Certificates2019C27601.certificate7SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
-                (Certificates2019C27601.certificate8, Certificates2019C27601.certificate8SHA256));
+                .CERTIFICATE_1, Certificates2019C27601.CERTIFICATE_1_SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
+                (Certificates2019C27601.CERTIFICATE_2, Certificates2019C27601.CERTIFICATE_2_SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
+                (Certificates2019C27601.CERTIFICATE_3, Certificates2019C27601.CERTIFICATE_3_SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
+                (Certificates2019C27601.CERTIFICATE_4, Certificates2019C27601.CERTIFICATE_4_SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
+                (Certificates2019C27601.CERTIFICATE_5, Certificates2019C27601.CERTIFICATE_5_SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
+                (Certificates2019C27601.CERTIFICATE_6, Certificates2019C27601.CERTIFICATE_6_SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
+                (Certificates2019C27601.CERTIFICATE_7, Certificates2019C27601.CERTIFICATE_7_SHA256), new EuropeanTrustedListConfiguration.PemCertificateWithHash
+                (Certificates2019C27601.CERTIFICATE_8, Certificates2019C27601.CERTIFICATE_8_SHA256));
         }
 
         /// <summary>Represents a PEM certificate along with its SHA-256 base64 encoded hash.</summary>

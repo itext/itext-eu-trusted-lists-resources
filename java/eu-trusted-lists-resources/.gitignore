@@ -12,7 +12,7 @@ target/
 *.iws
 *.iml
 *.ipr
-
+build/
 ### Eclipse ###
 .apt_generated
 .classpath

@@ -4,14 +4,44 @@
 
   <groupId>com.itextpdf</groupId>
   <artifactId>eu-trusted-lists-resources</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <name>eu-trusted-lists-resources</name>
   <url>https://itextpdf.com</url>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://mit-license.org/</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>itext</id>
+      <name>iText Software</name>
+      <email>info@itextpdf.com</email>
+      <url>https://www.itextpdf.com</url>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>Github</connection>
+    <url>https://github.com/itext/eu-trusted-lists-resources</url>
+  </scm>
+  <description>
+    Contains the certificates needed for EU list of trusted lists (LoTL) validation in the iText Sign module.
+    Disclaimer
+    The authenticity and integrity of the used certificates should be verified by relying parties prior to any use.
+    Apryse accepts no responsibility or liability whatsoever with regard to the content of this repository.
+  </description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.source.version>3.0.1</maven.source.version>
+    <javadoc.version>3.7.0</javadoc.version>
   </properties>
   <dependencies>
     <dependency>
@@ -21,6 +51,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <profiles>
     <profile>
       <id>with-sharpen</id>
@@ -70,6 +101,15 @@
         </file>
       </activation>
       <build>
+        <resources>
+          <resource>
+            <directory>${project.basedir}/../../</directory>
+            <includes>
+              <include>NOTICE.md</include>
+              <include>LICENCE.md</include>
+            </includes>
+          </resource>
+        </resources>
         <plugins>
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
@@ -129,6 +169,40 @@
                 </configuration>
               </execution>
             </executions>
+          </plugin>
+          <plugin>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>${javadoc.version}</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <failOnError>false</failOnError>
+              <quiet>true</quiet>
+              <source>8</source>
+            </configuration>
+          </plugin>
+          <plugin>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>${maven.source.version}</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>jar-no-fork</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <excludeResources>true</excludeResources>
+            </configuration>
           </plugin>
         </plugins>
       </build>
