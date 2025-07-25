@@ -106,7 +106,7 @@
             <directory>${project.basedir}/../../</directory>
             <includes>
               <include>NOTICE.md</include>
-              <include>LICENCE.md</include>
+              <include>LICENSE.md</include>
             </includes>
           </resource>
         </resources>

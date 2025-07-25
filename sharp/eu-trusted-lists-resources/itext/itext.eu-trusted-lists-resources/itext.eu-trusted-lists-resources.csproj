@@ -10,10 +10,12 @@
     <AssemblyName>itext.eu-trusted-lists-resources</AssemblyName>
     <PackageId>itext.eu-trusted-lists-resources</PackageId>
     <Version>1.0.0</Version>
-    <Title>iText eu trusted lists resources</Title>
+    <Title>iText EU trusted lists resources</Title>
     <Authors>Apryse Software</Authors>
-    <Company>Apryse Software</Company>
     <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
+    <PackageProjectUrl>https://itextpdf.com/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/itext/eu-trusted-lists-resources</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageIcon>ITSC-avatar.png</PackageIcon>
     <RequireLicenseAcceptance>true</RequireLicenseAcceptance>
     <Description>
@@ -30,7 +32,7 @@
   <ItemGroup>
     <None Include="ITSC-avatar.png" Pack="true" PackagePath="ITSC-avatar.png"  />
     <None Include="..\..\..\..\NOTICE.md" Pack="true" PackagePath="NOTICE.md" />
-    <None Include="..\..\..\..\LICENCE.md" Pack="true" PackagePath="LICENCE.md" />
+    <None Include="..\..\..\..\LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
   </ItemGroup>
 
 </Project>
