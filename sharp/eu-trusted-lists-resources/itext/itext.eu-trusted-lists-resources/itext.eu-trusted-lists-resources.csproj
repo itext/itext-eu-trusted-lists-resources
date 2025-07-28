@@ -7,7 +7,9 @@
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
     <OutputType>Library</OutputType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DelaySign>False</DelaySign>
     <AssemblyName>itext.eu-trusted-lists-resources</AssemblyName>
+    <SignAssembly>True</SignAssembly>
     <PackageId>itext.eu-trusted-lists-resources</PackageId>
     <Version>1.0.0</Version>
     <Title>iText EU trusted lists resources</Title>
@@ -28,7 +30,9 @@
     <PackageLanguage>en-US</PackageLanguage>
     <PackageTags>itext c# .net csharp pdf EU listOfTrustedLists opensource open source</PackageTags>
   </PropertyGroup>
-
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>itext.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <None Include="ITSC-avatar.png" Pack="true" PackagePath="ITSC-avatar.png"  />
     <None Include="..\..\..\..\NOTICE.md" Pack="true" PackagePath="NOTICE.md" />
