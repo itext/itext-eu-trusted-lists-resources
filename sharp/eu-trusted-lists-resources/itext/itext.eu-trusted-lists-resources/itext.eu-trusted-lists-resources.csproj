@@ -11,7 +11,7 @@
     <AssemblyName>itext.eu-trusted-lists-resources</AssemblyName>
     <SignAssembly>True</SignAssembly>
     <PackageId>itext.eu-trusted-lists-resources</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Title>iText EU trusted lists resources</Title>
     <Authors>Apryse Software</Authors>
     <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
