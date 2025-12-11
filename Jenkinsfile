@@ -38,7 +38,9 @@ pipeline {
                 script {
                     println "\n${ColorCodings.GREENBOLD}Build .NET${ColorCodings.NC}"
                     dir ('sharp/eu-trusted-lists-resources/itext/itext.eu-trusted-lists-resources') {
-                        bat 'dotnet pack -c Release'
+                        bat 'dotnet build -c Release'
+                        if (GeneralVariables.lotlResources.dllSigningEnabled) signDlls(findFiles(glob: '**/*.dll'))
+                        bat 'dotnet pack -c Release --no-build --no-restore'
                         dir ('bin/Release') {
                             archiveArtifacts artifacts: '*.nupkg',
                                 fingerprint: true,
