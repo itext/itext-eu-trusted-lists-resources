@@ -26,7 +26,7 @@
       The authenticity and integrity of the used certificates should be verified by relying parties prior to any use.
       Apryse accepts no responsibility or liability whatsoever with regard to the content of this repository.
     </Description>
-    <Copyright>Copyright (c) 1998-2025 Apryse Group NV</Copyright>
+    <Copyright>Copyright (c) 1998-2026 Apryse Group NV</Copyright>
     <PackageLanguage>en-US</PackageLanguage>
     <PackageTags>itext c# .net csharp pdf EU listOfTrustedLists opensource open source</PackageTags>
   </PropertyGroup>
