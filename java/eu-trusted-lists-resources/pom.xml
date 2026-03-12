@@ -42,6 +42,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven.source.version>3.0.1</maven.source.version>
     <javadoc.version>3.7.0</javadoc.version>
+    <sharpen.version>1.0</sharpen.version>
   </properties>
   <dependencies>
     <dependency>
@@ -72,7 +73,7 @@
               <dependency>
                 <groupId>sharpen</groupId>
                 <artifactId>standard-framework-mapping</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${sharpen.version}</version>
               </dependency>
             </dependencies>
             <configuration>
@@ -210,7 +211,7 @@
         <dependency>
           <groupId>sharpen</groupId>
           <artifactId>sharpen-config</artifactId>
-          <version>1.0-SNAPSHOT</version>
+          <version>${sharpen.version}</version>
           <scope>provided</scope>
         </dependency>
       </dependencies>
