@@ -26,7 +26,7 @@ public class EuropeanTrustedListConfiguration {
 
     private static final String EU_TRUSTED_LISTS_URL = "https://ec.europa.eu/tools/lotl/eu-lotl.xml";
     private static final String CURRENTLY_SUPPORTED_PUBLICATION = "https://eur-lex.europa" +
-            ".eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.276.01.0001.01.ENG";
+            ".eu/eli/C/2026/1944/oj";
 
     /**
      * Default constructor for the EuropeanTrustedListConfiguration.
@@ -61,22 +61,18 @@ public class EuropeanTrustedListConfiguration {
      */
     public List<PemCertificateWithHash> getCertificates() {
         return Arrays.asList(
-                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_1,
-                        Certificates2019C27601.CERTIFICATE_1_SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_2,
-                        Certificates2019C27601.CERTIFICATE_2_SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_3,
-                        Certificates2019C27601.CERTIFICATE_3_SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_4,
-                        Certificates2019C27601.CERTIFICATE_4_SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_5,
-                        Certificates2019C27601.CERTIFICATE_5_SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_6,
-                        Certificates2019C27601.CERTIFICATE_6_SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_7,
-                        Certificates2019C27601.CERTIFICATE_7_SHA256),
-                new PemCertificateWithHash(Certificates2019C27601.CERTIFICATE_8,
-                        Certificates2019C27601.CERTIFICATE_8_SHA256)
+                new PemCertificateWithHash(CertificatesC20261944.CERTIFICATE_1,
+                        CertificatesC20261944.CERTIFICATE_1_SHA256),
+                new PemCertificateWithHash(CertificatesC20261944.CERTIFICATE_2,
+                        CertificatesC20261944.CERTIFICATE_2_SHA256),
+                new PemCertificateWithHash(CertificatesC20261944.CERTIFICATE_3,
+                        CertificatesC20261944.CERTIFICATE_3_SHA256),
+                new PemCertificateWithHash(CertificatesC20261944.CERTIFICATE_4,
+                        CertificatesC20261944.CERTIFICATE_4_SHA256),
+                new PemCertificateWithHash(CertificatesC20261944.CERTIFICATE_5,
+                        CertificatesC20261944.CERTIFICATE_5_SHA256),
+                new PemCertificateWithHash(CertificatesC20261944.CERTIFICATE_6,
+                        CertificatesC20261944.CERTIFICATE_6_SHA256)
         );
     }
 
